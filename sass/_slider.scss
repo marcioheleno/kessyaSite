@@ -1,0 +1,53 @@
+@import "compass/css3";
+@import "compass/support";
+
+.slider {
+  height: 100%;
+  min-width: 100%;
+
+  .imagem{
+    height: 480px;
+    background: {
+      repeat: no-repeat;
+
+      position: top right;
+      attachment: fixed;
+    }
+  };
+}
+.imagem-one {
+  background: {
+    image: url("../img/ROB_2519-copiar.jpg");
+  }
+  @include background-size(cover);
+
+}
+.imagem-two {
+  background: {
+    image: url("../img/ROB_2546-copiar.jpg");
+  };
+  @include background-size(cover);
+
+}
+.imagem-three{
+  background: {
+    image: url("../img/kessyaFotoUm.jpg");
+  };
+  @include background-size(cover);
+
+}
+
+#auto {
+  @include background-size(auto);
+}
+#contain {
+  @include background-size(contain);
+}
+#cover {
+ }
+#percent {
+  @include background-size(50% 50%);
+}
+#absolute {
+  @include background-size(100px 25px);
+}

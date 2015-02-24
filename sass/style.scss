@@ -1,0 +1,32 @@
+/* Desenvovido por: Mar Comunicação */
+
+@import "compass/reset";
+@import "compass/css3";
+
+
+
+// //////////////////////
+// CONFIG
+// //////////////////////
+
+$total_width: 100%;
+$container_margin: 1%;
+$gutter_width: 2%;
+$max_width: 100%;
+
+$color_yellow: #fff200;
+$color_nearlyblack: #252525;
+$color_nearlynearlyblack: #454545;
+$color_body: #636363;
+$color_headlines: #b7b7b7;
+
+
+@import "grid16";
+@import "gridNav"; // apagar apos o desenvolvimento
+@import "gridOverlay";
+@import "geral"; // section geral css gerais do site
+@import "header";
+@import "menuSidebar";  // menu sidebar
+@import "slider"; // section slider
+@import "bio"; // section biografia
+

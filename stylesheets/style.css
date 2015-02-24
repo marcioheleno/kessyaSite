@@ -1,0 +1,760 @@
+@charset "UTF-8";
+/* Desenvovido por: Mar Comunicação */
+/* line 5, ../../../../../compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/**
+ * Clearfix
+ */
+/**
+ * Legacy Clearfix
+ */
+/**
+ * Establish the grid-containing element.
+ */
+/**
+ * Align an element to the grid.
+ */
+/**
+ * Apply to any column to make it the last one of the current row.
+ */
+/* line 1, ../sass/_gridNav.scss */
+.tooltip {
+  position: absolute;
+  display: block;
+  color: white;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  -moz-transition: opacity 0.1s ease-out, margin-top 0.1s ease-out;
+  -o-transition: opacity 0.1s ease-out, margin-top 0.1s ease-out;
+  -webkit-transition: opacity 0.1s ease-out, margin-top 0.1s ease-out;
+  transition: opacity 0.1s ease-out, margin-top 0.1s ease-out;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  margin-top: 3px;
+  z-index: 9000;
+}
+/* line 15, ../sass/_gridNav.scss */
+.tooltip .arrow {
+  position: absolute;
+  display: block;
+  top: -5px;
+  left: 50%;
+  margin-left: -5px;
+  background-position: 0 -329px;
+  width: 10px;
+  height: 5px;
+}
+
+/* line 28, ../sass/_gridNav.scss */
+.tooltip.show {
+  margin-top: 0px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/* line 33, ../sass/_gridNav.scss */
+.gridshow {
+  width: 100%;
+  height: 2em;
+}
+/* line 37, ../sass/_gridNav.scss */
+.gridshow div {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* line 1, ../sass/_gridOverlay.scss */
+#grid {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  pointer-events: none;
+  z-index: 9001;
+  overflow: visible !important;
+}
+/* line 10, ../sass/_gridOverlay.scss */
+#grid div {
+  width: 96.92%;
+  margin: 0 1.54%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 5000px;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+/* line 20, ../sass/_gridOverlay.scss */
+#grid div div {
+  float: left;
+  margin-right: -100%;
+  width: 4.7%;
+  height: 100%;
+  background: black;
+}
+/* line 165, ../sass/_grid16.scss */
+#grid div div:nth-child(16n+1) {
+  margin-left: 0%;
+  margin-bottom: 1.65%;
+  clear: both;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 165, ../sass/_grid16.scss */
+#grid div div:nth-child(16n+2) {
+  margin-left: 6.35%;
+  margin-bottom: 1.65%;
+  clear: none;
+}
+/* line 165, ../sass/_grid16.scss */
+#grid div div:nth-child(16n+3) {
+  margin-left: 12.71%;
+  margin-bottom: 1.65%;
+  clear: none;
+}
+/* line 165, ../sass/_grid16.scss */
+#grid div div:nth-child(16n+4) {
+  margin-left: 19.06%;
+  margin-bottom: 1.65%;
+  clear: none;
+}
+/* line 165, ../sass/_grid16.scss */
+#grid div div:nth-child(16n+5) {
+  margin-left: 25.41%;
+  margin-bottom: 1.65%;
+  clear: none;
+}
+/* line 165, ../sass/_grid16.scss */
+#grid div div:nth-child(16n+6) {
+  margin-left: 31.77%;
+  margin-bottom: 1.65%;
+  clear: none;
+}
+/* line 165, ../sass/_grid16.scss */
+#grid div div:nth-child(16n+7) {
+  margin-left: 38.12%;
+  margin-bottom: 1.65%;
+  clear: none;
+}
+/* line 165, ../sass/_grid16.scss */
+#grid div div:nth-child(16n+8) {
+  margin-left: 44.47%;
+  margin-bottom: 1.65%;
+  clear: none;
+}
+/* line 165, ../sass/_grid16.scss */
+#grid div div:nth-child(16n+9) {
+  margin-left: 50.83%;
+  margin-bottom: 1.65%;
+  clear: none;
+}
+/* line 165, ../sass/_grid16.scss */
+#grid div div:nth-child(16n+10) {
+  margin-left: 57.18%;
+  margin-bottom: 1.65%;
+  clear: none;
+}
+/* line 165, ../sass/_grid16.scss */
+#grid div div:nth-child(16n+11) {
+  margin-left: 63.53%;
+  margin-bottom: 1.65%;
+  clear: none;
+}
+/* line 165, ../sass/_grid16.scss */
+#grid div div:nth-child(16n+12) {
+  margin-left: 69.88%;
+  margin-bottom: 1.65%;
+  clear: none;
+}
+/* line 165, ../sass/_grid16.scss */
+#grid div div:nth-child(16n+13) {
+  margin-left: 76.24%;
+  margin-bottom: 1.65%;
+  clear: none;
+}
+/* line 165, ../sass/_grid16.scss */
+#grid div div:nth-child(16n+14) {
+  margin-left: 82.59%;
+  margin-bottom: 1.65%;
+  clear: none;
+}
+/* line 165, ../sass/_grid16.scss */
+#grid div div:nth-child(16n+15) {
+  margin-left: 88.94%;
+  margin-bottom: 1.65%;
+  clear: none;
+}
+/* line 165, ../sass/_grid16.scss */
+#grid div div:nth-child(16n+16) {
+  margin-left: 95.3%;
+  margin-bottom: 1.65%;
+  clear: none;
+}
+
+/* line 30, ../sass/_gridOverlay.scss */
+#ggridshow {
+  position: fixed;
+  /* deletar */
+}
+
+/* line 33, ../sass/_gridOverlay.scss */
+section div {
+  height: 80px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+  line-height: 80px;
+}
+
+/* line 42, ../sass/_gridOverlay.scss */
+#grid {
+  margin-bottom: 0px;
+  height: 0px;
+}
+/* line 46, ../sass/_gridOverlay.scss */
+#grid div {
+  background: none;
+}
+/* line 49, ../sass/_gridOverlay.scss */
+#grid div div {
+  background: black;
+}
+
+/* line 57, ../sass/_gridOverlay.scss */
+.gridStyleOutlines #grid div {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+/* line 61, ../sass/_gridOverlay.scss */
+.gridStyleOutlines #grid div div {
+  background: none !important;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+/* container */
+/* line 3, ../sass/_geral.scss */
+*,
+*:after,
+*::before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 9, ../sass/_geral.scss */
+main {
+  border-top: 0.2em solid darkgoldenrod;
+}
+
+/* line 12, ../sass/_geral.scss */
+html,
+body,
+.container,
+.pusher,
+.content {
+  height: 100%;
+  overflow: auto;
+  /* importante para o rola da pagina*/
+}
+
+/* line 21, ../sass/_geral.scss */
+.content {
+  background: #f3efe0;
+}
+
+/* line 25, ../sass/_geral.scss */
+.content,
+.content-inner {
+  position: relative;
+}
+
+/* line 30, ../sass/_geral.scss */
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 34, ../sass/_geral.scss */
+.pusher {
+  position: relative;
+  left: 0;
+  z-index: 99;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+/* line 42, ../sass/_geral.scss */
+.pusher::after {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  background: rgba(0, 0, 0, 0.8);
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+/* line 55, ../sass/_geral.scss */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 2em;
+  min-height: 300px;
+  position: relative;
+  text-align: right;
+}
+
+/* line 64, ../sass/_geral.scss */
+.column:nth-child(2) {
+  box-shadow: -1px 0 0 rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* line 69, ../sass/_geral.scss */
+.column p {
+  font-weight: 300;
+  font-size: 2em;
+  padding: 0 0 0.5em;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* gatilho do push */
+/* line 82, ../sass/_geral.scss */
+#trigger-effects button {
+  position: fixed;
+  background: #2e2f31;
+  border-radius: 0em 0em 1em;
+  width: 4em;
+  height: 4em;
+  background-image: url("../img/kessya_logo_m-01.svg");
+  background-repeat: no-repeat;
+}
+
+/* line 94, ../sass/_geral.scss */
+section {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* menu sidebar*/
+/* line 6, ../sass/_header.scss */
+.menu-aberto .pusher::after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+/* line 14, ../sass/_header.scss */
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  visibility: visible;
+  max-width: 80%;
+  width: 16em;
+  height: 100%;
+  background: #2e2f31;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* line 28, ../sass/_header.scss */
+.menu::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  content: '';
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  overflow: auto;
+}
+
+/* line 42, ../sass/_header.scss */
+.menu-aberto .menu::after {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+  overflow: auto;
+}
+
+/* line 50, ../sass/_header.scss */
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 55, ../sass/_header.scss */
+.menu h1 {
+  margin: 0 auto;
+  padding: 0.5em;
+  color: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  font-weight: 300;
+  font-size: 1.8em;
+}
+
+/* line 63, ../sass/_header.scss */
+.menu h1 a img {
+  width: 5.5em;
+  margin: 0 auto;
+}
+
+/* line 67, ../sass/_header.scss */
+.menu ul li a {
+  display: block;
+  padding: 0.8em 0.5em 0.5em 0.5em;
+  outline: none;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.2);
+  color: #ffa122;
+  font-family: 'Lobster', cursive;
+  font-size: 1.0em;
+  text-align: center;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
+  letter-spacing: 1px;
+  font-weight: 400;
+  -webkit-transition: background 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* line 82, ../sass/_header.scss */
+.menu ul li a:hover {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -1px transparent;
+  color: #fff;
+}
+
+/* Effect 2: Reveal */
+/* line 88, ../sass/_header.scss */
+.efeitoRevelar.menu-aberto .pusher {
+  -webkit-transform: translate3d(80%, 0, 0);
+  transform: translate3d(80%, 0, 0);
+}
+
+/* line 93, ../sass/_header.scss */
+.efeitoRevelar.menu {
+  z-index: 1;
+  visibility: hidden;
+  overflow-y: scroll;
+}
+
+/* line 99, ../sass/_header.scss */
+.efeitoRevelar.menu-aberto .efeitoRevelar.menu {
+  visibility: visible;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+/* line 105, ../sass/_header.scss */
+.efeitoRevelar .menu::after {
+  display: none;
+}
+
+/* menu rede social*/
+/* line 111, ../sass/_header.scss */
+.social {
+  width: 100%;
+  height: 2.2em;
+  clear: both;
+}
+
+/* line 118, ../sass/_header.scss */
+.social ul li {
+  float: left;
+}
+
+/* line 121, ../sass/_header.scss */
+.social ul li a {
+  padding: 1em  0.2em;
+}
+
+/* line 127, ../sass/_header.scss */
+.social ul li img {
+  width: 2em;
+}
+
+/*
+//todo VERIFICAR POSTERIORMENTE CAMPO DE BUSCA
+.busca{
+  width: 100%;
+  height: 2.5em;
+  padding: 1.8em 0.6em;
+}
+*/
+@media screen and (min-width: 480px) {
+  /* line 152, ../sass/_header.scss */
+  .efeitoRevelar.menu-aberto .efeitoRevelar.menu {
+    height: 20em;
+    overflow: auto;
+  }
+}
+/* line 160, ../sass/_header.scss */
+#row1 div, #row2 div, #row3 div, #row4 div, #row5 div, #row6 div {
+  float: left;
+  margin-right: -100%;
+  width: 87.25%;
+}
+/* line 165, ../sass/_grid16.scss */
+#row1 div:nth-child(1n+1), #row2 div:nth-child(1n+1), #row3 div:nth-child(1n+1), #row4 div:nth-child(1n+1), #row5 div:nth-child(1n+1), #row6 div:nth-child(1n+1) {
+  margin-left: 0%;
+  margin-bottom: 2%;
+  clear: both;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+@media screen and (min-width: 720px) {
+  /* line 212, ../sass/_header.scss */
+  .menu {
+    width: 1200px;
+    background: #aa1122;
+    display: block;
+  }
+
+  /* line 217, ../sass/_header.scss */
+  .pusher {
+    background: rgba(0, 0, 0, 0.2);
+    overflow: visible;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 238, ../sass/_header.scss */
+  .menu {
+    width: 100%;
+    background: #2e2f31;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    visibility: visible;
+  }
+
+  /* line 246, ../sass/_header.scss */
+  .menu h1 {
+    font-size: large;
+    display: inline;
+  }
+
+  /* line 250, ../sass/_header.scss */
+  .content {
+    background: rgba(0, 0, 0, 0.2);
+    overflow: visible;
+  }
+
+  /* line 254, ../sass/_header.scss */
+  #trigger-effects button {
+    display: none;
+    z-index: -999999;
+  }
+
+  /* line 277, ../sass/_header.scss */
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* line 282, ../sass/_header.scss */
+  .menu h1 {
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 330, ../sass/_header.scss */
+  header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5em;
+    background-color: #48a770;
+    padding: 0;
+    z-index: 50;
+    font-family: 'Lato', Arial, sans-serif;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    clear: both;
+  }
+
+  /* line 348, ../sass/_header.scss */
+  header h1 {
+    font-size: 5em;
+  }
+}
+/* line 4, ../sass/_slider.scss */
+.slider {
+  height: 100%;
+  min-width: 100%;
+}
+/* line 8, ../sass/_slider.scss */
+.slider .imagem {
+  height: 480px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: fixed;
+}
+
+/* line 18, ../sass/_slider.scss */
+.imagem-one {
+  background-image: url("../img/ROB_2519-copiar.jpg");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 25, ../sass/_slider.scss */
+.imagem-two {
+  background-image: url("../img/ROB_2546-copiar.jpg");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 32, ../sass/_slider.scss */
+.imagem-three {
+  background-image: url("../img/kessyaFotoUm.jpg");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 40, ../sass/_slider.scss */
+#auto {
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  -webkit-background-size: auto;
+  background-size: auto;
+}
+
+/* line 43, ../sass/_slider.scss */
+#contain {
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+/* line 48, ../sass/_slider.scss */
+#percent {
+  -moz-background-size: 50% 50%;
+  -o-background-size: 50% 50%;
+  -webkit-background-size: 50% 50%;
+  background-size: 50% 50%;
+}
+
+/* line 51, ../sass/_slider.scss */
+#absolute {
+  -moz-background-size: 100px 25px;
+  -o-background-size: 100px 25px;
+  -webkit-background-size: 100px 25px;
+  background-size: 100px 25px;
+}
+
+/* line 3, ../sass/_bio.scss */
+#bio {
+  width: 100%;
+  height: 380px;
+  padding: 0 1em;
+}
+/* line 8, ../sass/_bio.scss */
+#bio h1 {
+  font-family: 'Lobster', cursive;
+}
+/* line 12, ../sass/_bio.scss */
+#bio p {
+  font-size: 0.7rem;
+  text-align: justify;
+  font-weight: normal;
+  line-height: 0.8em;
+}
